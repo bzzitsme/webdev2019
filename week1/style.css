@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header-ctrl{
+    background-color: #3b5998;
+    width: 100%;
+    height: 90px;
+}
+.ctrl-align{
+    width: 1000px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-ctrl{
+    float: left;
+}
+.img-ctrl img{
+    width: 200px;
+    height: 60px;
+    margin-top: 1px
+}
+.login{
+    float: right;
+    font-family: "Arial";
+    font-size: 12px;
+    margin-top: 1px;
+    color: white;
+}
+.login .btn{
+    margin-left:10px;
+    background-color: royalblue;
+    color: white;
+    font-family: "Arial";
+    padding: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.login p{
+    margin-left: 12px;
+}
+.login a{
+    text-decoration: none;
+    color: rgb(177, 172, 172);
+}
+.cin{
+    width: 150px;
+    height: 17px;
+    margin-left: 12px;
+}
+
+.content{
+    width: 1000px;
+    height: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.left{
+    float: left;
+    margin-top: 30px;
+    width: 500px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: rgb(5, 25, 85);
+}
+.lefttext{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 20px
+}
+.left img{
+    width: 500px;
+    height: 300px;
+}
+
+.right{
+    float: right;
+    font-family: "Arial";
+    margin-top: 30px;
+}
+
+.fio{
+    margin-top: 17px;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid;
+    width: 208px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.belowfio{
+    font-size: 20px;
+    padding-left: 10px;
+    border: 1px solid;
+    width: 440px;
+    height: 30px;
+    margin-left: 10px;
+}
+.righttext{
+    margin-left: 10px;
+}
+.scrool{
+    width: 65px;
+    height: 25px;
+    margin-left: 10px;
+}
+.right p{
+    margin-left: 10px;
+}
