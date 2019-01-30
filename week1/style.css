@@ -8,7 +8,7 @@
     height: 90px;
 }
 .ctrl-align{
-    width: 1000px;
+    width: 960px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -52,16 +52,18 @@
 }
 
 .content{
-    width: 1000px;
-    height: 1000px;
-    margin-left:auto;
-    margin-right:auto;
-
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 590px;
+    background: rgb(219, 222, 231);
 }
 .left{
     float: left;
     margin-top: 30px;
     width: 500px;
+    margin-left: 470px;
     font-family: "Arial";
     font-weight: bold;
     color: rgb(5, 25, 85);
@@ -79,15 +81,20 @@
 .right{
     float: right;
     font-family: "Arial";
-    margin-top: 30px;
+    margin-top: 20px;
 }
-
+.righttext{
+    margin-right: 590px;
+}
+.right p{
+    margin-top: 13px;
+    font-family: "Arial";
+}
 .fio{
     margin-top: 17px;
-    margin-left: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid;
-    width: 208px;
+    width: 213px;
     height: 30px;
     font-size: 20px;
     padding-left: 10px;
@@ -96,18 +103,91 @@
     font-size: 20px;
     padding-left: 10px;
     border: 1px solid;
-    width: 440px;
+    width: 444px;
     height: 30px;
-    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
-.righttext{
-    margin-left: 10px;
-}
+
 .scrool{
-    width: 65px;
-    height: 25px;
-    margin-left: 10px;
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    float: left;
+    padding-left: 5px;
 }
-.right p{
+
+.sex{
+    margin-top: 20px;
     margin-left: 10px;
+    font-family: "Arial";
+    
+}
+#test{
+    margin-left: -115px;
+}
+.content a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.why a{
+    color: royalblue;
+}
+.agree{
+    width: 350px;
+    font-size: 11px;
+}
+.agree a{
+    color: royalblue;
+}
+
+.register{
+    margin-top: 20px;
+    background-color: green;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-style: "Arial";
+    font-size: 20px;
+    border: 2px solid green;
+    font-weight: bold;
+}
+.create{
+    font-size: 12px;
+    color: gray;    
+    font-weight: bold;
+    font-style: "Arial";
+}
+.create a{
+    color: royalblue;
+}
+
+.language{
+    margin-top: 600px;
+    margin-left: 470px;
+    font-size: 14px;
+    color: gray;
+    font-style: "Arial";
+}
+.language a{
+    color: royalblue;
+    font-size: 14px;
+}
+.end{
+    margin-left: 470px;
+    font-size: 14px;
+    color: gray;
+    font-style: "Arial";
+}
+.end a{
+    color: royalblue;
+    font-size: 14px;
+    margin-left: 470px; 
+}
+.last{
+    color: gray;
+    font-size: 13px;
+    margin-left: 470px;
+    font-style: "Arial";
 }
