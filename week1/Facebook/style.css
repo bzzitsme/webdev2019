@@ -45,7 +45,7 @@
     height: 17px;
     margin-left: 12px;
 }
-#ButtonEnter
+#buttonenter
 {
     margin-left: 10px;
     background-color: royalblue;
@@ -63,14 +63,14 @@
     height: 590px;
     background: rgb(219, 222, 231);
 }
-.Left
+.left
 {
     float: left;    
     margin-top: 30px;
     width: 500px;
     margin-left: 470px;
 }
-.LeftSideText
+.leftsidetext
 {
     margin-top: 9px;
     margin-bottom: 9px;
@@ -79,7 +79,7 @@
     font-weight: bold;
     color: rgb(5, 25, 85);
 }
-.Right
+.right
 {
     left: 1100px;
     position: fixed;
@@ -87,16 +87,16 @@
     font-family: "Arial";
     margin-top: 20px;
 }
-.RightSideText
+.rightsidetext
 {
     margin-right: 590px;
 }
-.Right p
+.right p
 {
     margin-top: 13px;
     font-family: "Arial";
 }
-.NameSurname
+.namesurname
 {
     margin-top: 17px;
     border-radius: 5px;
@@ -106,7 +106,7 @@
     font-size: 20px;
     padding-left: 10px;
 }
-.EmailAndPass
+.emailandpassword
 {
     font-size: 20px;
     padding-left: 10px;
@@ -116,7 +116,7 @@
     margin-top: 10px;
     border-radius: 5px;
 }
-.Birthday
+.birthday
 {
     margin-top: 10px;
     width: 70px;
@@ -131,7 +131,7 @@
     font-family: "Arial";
     
 }
-#MaleTest
+#maletest
 {
     margin-left: -115px;
 }
@@ -144,7 +144,7 @@ p a
 {
     color: royalblue;
 }
-.Text
+.text
 {
     width: 350px;
     font-size: 11px;
@@ -162,7 +162,7 @@ p a
     border: 2px solid green;
     font-weight: bold;
 }
-.Star {
+.star {
     font-size: 12px;
     color: gray;    
     font-weight: bold;
@@ -179,13 +179,13 @@ p a
     color: royalblue;
     font-size: 14px;
 }
-.BottomText{
+.bottomtext{
     margin-left: 470px;
     font-size: 14px;
     color: gray;
     font-style: "Arial";
 }
-.BottomText a{
+.bottomtext a{
     color: royalblue;
     font-size: 14px;
     margin-left: 470px; 
