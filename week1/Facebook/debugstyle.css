@@ -81,6 +81,8 @@
 }
 .Right
 {
+    left: 1100px;
+    position: fixed;
     float: right;
     font-family: "Arial";
     margin-top: 20px;
