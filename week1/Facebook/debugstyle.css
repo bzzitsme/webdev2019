@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header-control
+{
+    background-color: #3b5998;
+    width: 100%;
+    height: 90px;
+}
+.control-align
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-control img
+{
+    float: left;
+    width: 200px;
+    height: 60px;
+    margin-top: 1px
+}
+.login
+{
+    float: right;
+    font-family: "Arial";
+    font-size: 12px;
+    margin-top: 1px;
+    color: white;
+}
+.login p
+{
+    margin-left: 12px;
+}
+.login a
+{
+    text-decoration: none;
+    color: rgb(177, 172, 172);
+}
+
+.input
+{
+    width: 150px;
+    height: 17px;
+    margin-left: 12px;
+}
+#ButtonEnter
+{
+    margin-left: 10px;
+    background-color: royalblue;
+    color: white;
+    font-family: "Arial";
+    padding: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.content
+{
+    position: fixed;    
+    width: 100%;
+    height: 590px;
+    background: rgb(219, 222, 231);
+}
+.Left
+{
+    float: left;    
+    margin-top: 30px;
+    width: 500px;
+    margin-left: 470px;
+}
+.LeftSideText
+{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 20px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: rgb(5, 25, 85);
+}
+.Right
+{
+    float: right;
+    font-family: "Arial";
+    margin-top: 20px;
+}
+.RightSideText
+{
+    margin-right: 590px;
+}
+.Right p
+{
+    margin-top: 13px;
+    font-family: "Arial";
+}
+.NameSurname
+{
+    margin-top: 17px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 213px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.EmailAndPass
+{
+    font-size: 20px;
+    padding-left: 10px;
+    border: 1px solid;
+    width: 444px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.Birthday
+{
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    float: left;
+    padding-left: 5px;
+}
+.gender
+{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: "Arial";
+    
+}
+#MaleTest
+{
+    margin-left: -115px;
+}
+.content a
+{
+    text-decoration: none;
+    font-size: 12px;
+}
+p a
+{
+    color: royalblue;
+}
+.Text
+{
+    width: 350px;
+    font-size: 11px;
+}
+
+#registration{
+    margin-top: 20px;
+    background-color: green;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-style: "Arial";
+    font-size: 20px;
+    border: 2px solid green;
+    font-weight: bold;
+}
+.Star {
+    font-size: 12px;
+    color: gray;    
+    font-weight: bold;
+    font-style: "Arial";
+}
+.lang{
+    margin-top: 600px;
+    margin-left: 470px;
+    font-size: 14px;
+    color: gray;
+    font-style: "Arial";
+}
+.lang a{
+    color: royalblue;
+    font-size: 14px;
+}
+.BottomText{
+    margin-left: 470px;
+    font-size: 14px;
+    color: gray;
+    font-style: "Arial";
+}
+.BottomText a{
+    color: royalblue;
+    font-size: 14px;
+    margin-left: 470px; 
+}
+.copyright{
+    color: gray;
+    font-size: 13px;
+    margin-left: 470px;
+    font-style: "Arial";
+}
