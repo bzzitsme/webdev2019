@@ -7,9 +7,9 @@
        <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5doerLr7fTHzeE9WKHV2umHlcDy9Pnd4eyut9O1vtdZbat5ibmWoceGk7/M0eSrs9G/xtxMY6ZvgLVIYaWJ8OFBAAAC40lEQVR4nO3c63KqMBRAYU9iqaLg/d7W2vd/yE5nzt/ihjTsvTNrPQDDNxIDJDqZEBERERERERERERERERFZL4QYqydF7ZMcXKyadju97m/zzhZ7n8SqCY/T8Z+kXa19sv2LdbztRLqflu6EsXm8i3kOhbF9WffxeROG9tHT50xYbTd9fb6E7Vt/nydhqO9DgH6EcdZ7BPoSVpdhPjfCajUU6EQYhwN9COPncKALYdgeChe2socIv8LmnAJ0IIzXJKADYZMyCD0IE69R+8Iw+F7Gi7CVv67wKQzTVKB1YbMsXBhSbtdcCOtT6cLUudC8MD7SgbaFdepsb17YDHw140YYZn8ANC2M+78QWl57qvoMw8PuvHC3fljL70k3q7qu/a0Bt9LZ8HhpgvbJDioKgffWp28SvqRA7TMdmvDJ6egWKBV+Ob1EJ1LhyfB09yyZ0PFHKBMeG+3TTEgkPFXap5mQSGj5nuxpIuELQsshRGg/hAjthxCh/RAitB9ChPZDiNB+CBHarwxh6PiJci3ZWnptnv3SWRm4ev2920IgPN86jvDTfKsqrD4EiMR0V98qyceU1kF3iXgEofLy2wjCe/FX6Yful+kIwn3xwpXuOv8Iws/ihcr3NPmFa+UdU/mFS+XdKPmFZ+UtU/mFr8WPQ+3nx/zCi/K2t/xC7VcA2YUH7b2Z2YXqWxezCzfFf4bqmzOzC2/Ff9M8ihdqT4f5hdrDMLtQ+VXiCEL93x7mFiq/ShxBOC9+HL5pTxbZhVPtySK7UNuXXXhQH4a5hWvtZ6fswnf1ySL3GvBZ/yqdbGcdSf4O8q3rCLpL+P8LvxdFu02qjiNo455Vxn6arhAitB9ChPZDiNB+CBHaDyFC+yFEaD+ECO2HEKH9ECK0H0KE9kOI0H4IEdoPIUL7IURoP4QI7YcQof0QIrQfQoT2Q4jQfggR2g8hQvshRGg/hAjthxCh/RAitB9ChPZDiNB+CBH26BsaQkVVLImVewAAAABJRU5ErkJggg==" />
     </head>
     <body>
-        <div class="header-ctrl">>
-            <div class="ctrl-align">
-                <div class="img-ctrl">
+        <div class="header-control">>
+            <div class="control-align">
+                <div class="img-control">
                     <img src="https://pp.userapi.com/c850336/v850336819/cee45/_NKAlzZZBzs.jpg" alt="Facebook"/>
                 </div>
                 <div class= "login">
@@ -19,9 +19,9 @@
                              <td><p>Пароль</p></td>
                          </tr>
                          <tr>
-                             <td><input type="text" class="cin"/></td>
-                             <td><input type="password" class="cin"/></td>
-                             <td><input type="button" class="btn" value="Вход"/></td>
+                             <td><input type="text" class="input"/></td>
+                             <td><input type="password" class="input"/></td>
+                             <td><input type="button" id= "ButtonEnter" value="Вход"/></td>
                          </tr>
                          <tr>
                              <td>&nbsp;</td>
@@ -33,31 +33,30 @@
         </div>
 
         <div class="content">
-            <div class ="left">
-            <p class="lefttext">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+            <div class ="Left">
+            <p class="LeftSideText">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
             <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt ="world web">
             </div>
-            <div class="right">
-            <h1 class="righttext"> Регистрация</h1>
-            <p class="righttext">Это бесплатно и всегда будет бесплатнo.</p>
-
+            <div class="Right">
+            <h1 class="RightSideText"> Регистрация</h1>
+            <p class="RightSideText">Это бесплатно и всегда будет бесплатнo.</p>
             <table>
                 <tr>
-                    <td><input type="text" class="fio" placeholder="Имя"></td>
-                    <td><input type="text" class="fio" placeholder="Фамилия"></td>
+                    <td><input type="text" class="NameSurname" placeholder="Имя"></td>
+                    <td><input type="text" class="NameSurname" placeholder="Фамилия"></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2"><input type="text" class="belowfio" placeholder="Номер мобильного телефона или эл. адрес"></td>
+                    <td colspan="2"><input type="text" class="EmailAndPass" placeholder="Номер мобильного телефона или эл. адрес"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="password" class="belowfio" placeholder="Новый пароль"> <br><br></td>
+                    <td colspan="2"><input type="password" class="EmailAndPass" placeholder="Новый пароль"> <br><br></td>
                 </tr>
                 <tr>
-                    <td><p class="bday">Дата рождения</p></td>
+                    <td><p>Дата рождения</p></td>
                 </tr>
                 <td>
-                        <select class="scrool">
+                        <select class="Birthday">
                             <option>День</option>
                             <option>1</option>       
                             <option>2</option>       
@@ -91,7 +90,7 @@
                             <option>30</option>       
                             <option>31</option>       
                         </select>
-                        <select class="scrool">
+                        <select class="Birthday">
                             <option>Месяц</option>
                             <option>Январь</option>       
                             <option>Февраль</option>       
@@ -106,7 +105,7 @@
                             <option>Ноябрь</option>       
                             <option>Декабрь</option>       
                         </select>
-                        <select class="scrool">
+                        <select class="Birthday">
                             <option>Год</option>
                             <option>2019</option>       
                             <option>2018</option>       
@@ -141,23 +140,23 @@
                             <option>1989</option>    
                         </select>
                 </td>
-                <td>  <p class="why"><a href="#">Зачем указывать дату рождения?</a> </p> </td>
+                <td>  <p><a href="#">Зачем указывать дату рождения?</a> </p> </td>
 
                 <tr>
-                    <td><input type="radio" class="sex" name="gender" value="female">Женщина</td>
-                    <td><input type="radio" class="sex" id="test" name="gender" value="male">Мужчина</td>
+                    <td><input type="radio" class="gender" name="MaleFemale">Женщина</td>
+                    <td><input type="radio" class="gender" id="MaleTest" name="MaleFemale">Мужчина</td>
                 </tr>
             </table>
-            <p class="agree"> Нажимая кнопку Регистрация, вы принимаете <a href="#">Условия, Политику использования данных и Политику в отношении файлов cookie.</a> Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</p>
-            <input type="submit" class="register" value="Регистрация">
-            <p class="create"><a href = "#">Создать Страницу</a> знаменитости, музыкальной группы или компании.</p>
+            <p class="Text"> Нажимая кнопку Регистрация, вы принимаете <a href="#">Условия, Политику использования данных и Политику в отношении файлов cookie.</a> Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</p>
+            <input type="submit" id="registration" value="Регистрация">
+            <p class = "Star"><a class href = "#">Создать Страницу</a> знаменитости, музыкальной группы или компании.</p>
 
         </div>
 
-        <div class="language"> Русский &nbsp;&nbsp;&nbsp;<a href="#">English(US) &nbsp;&nbsp;&nbsp;Türkçe &nbsp;&nbsp;&nbsp;Bahasa &nbsp;&nbsp;&nbsp;Indonesia &nbsp;&nbsp;&nbsp;中文(简体)&nbsp;&nbsp;&nbsp; Қазақша Deutsch &nbsp;&nbsp;&nbsp;한국어 &nbsp;&nbsp;&nbsp;Shqip &nbsp;&nbsp;&nbsp;Español Português &nbsp;&nbsp;&nbsp;(Brasil)</a>
+        <div class="lang"> Русский &nbsp;&nbsp;&nbsp;<a href="#">English(US) &nbsp;&nbsp;&nbsp;Türkçe &nbsp;&nbsp;&nbsp;Bahasa &nbsp;&nbsp;&nbsp;Indonesia &nbsp;&nbsp;&nbsp;中文(简体)&nbsp;&nbsp;&nbsp; Қазақша Deutsch &nbsp;&nbsp;&nbsp;한국어 &nbsp;&nbsp;&nbsp;Shqip &nbsp;&nbsp;&nbsp;Español Português &nbsp;&nbsp;&nbsp;(Brasil)</a>
         </div>
         
-        <div class="end"><a href="#"><br>Регистрация &nbsp;&nbsp;&nbsp;&nbsp;Вход &nbsp;&nbsp;&nbsp;&nbsp;Messenger &nbsp;&nbsp;&nbsp;&nbsp;Facebook Lite &nbsp;&nbsp;&nbsp;&nbsp;Мобильное устройство &nbsp;&nbsp;&nbsp;&nbsp;Найти друзей &nbsp;&nbsp;&nbsp;&nbsp;Люди &nbsp;&nbsp;&nbsp;&nbsp;Профили &nbsp;&nbsp;&nbsp;&nbsp;Страницы &nbsp;&nbsp;&nbsp;&nbsp;Категории &nbsp;&nbsp;&nbsp;&nbsp;Страниц &nbsp;&nbsp;&nbsp;&nbsp;Места &nbsp;&nbsp;&nbsp;&nbsp;Игры</a></div>
-        <p class="last"><br> <br> <br>Facebook © 2019</p>
+        <div class="BottomText"><a href="#"><br>Регистрация &nbsp;&nbsp;&nbsp;&nbsp;Вход &nbsp;&nbsp;&nbsp;&nbsp;Messenger &nbsp;&nbsp;&nbsp;&nbsp;Facebook Lite &nbsp;&nbsp;&nbsp;&nbsp;Мобильное устройство &nbsp;&nbsp;&nbsp;&nbsp;Найти друзей &nbsp;&nbsp;&nbsp;&nbsp;Люди &nbsp;&nbsp;&nbsp;&nbsp;Профили &nbsp;&nbsp;&nbsp;&nbsp;Страницы &nbsp;&nbsp;&nbsp;&nbsp;Категории &nbsp;&nbsp;&nbsp;&nbsp;Страниц &nbsp;&nbsp;&nbsp;&nbsp;Места &nbsp;&nbsp;&nbsp;&nbsp;Игры</a></div>
+        <p class="copyright"><br> <br> <br>Facebook © 2019</p>
     </body>
 </html>
