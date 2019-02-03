@@ -21,10 +21,25 @@ body
     float: right;
     width: 18.125%;
     left: 51.0416%;
-    height: 60.5%;
+    height: 60%;
     margin-top: 35px;
     margin-right: 584px;
     background-color: white;
+}
+.footer
+{
+    margin-top: 60px;
+    border: 1px solid #FAFAFA;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-weight: 200;
+    padding-top: 25px;
+}
+a
+{
+    color: #3897F0;
+    text-decoration: none; 
 }
 .image
 {
