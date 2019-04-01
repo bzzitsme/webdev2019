@@ -2,6 +2,9 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-image: url("IMG_8116.jpg");
+}
 .black{
     background-color: black;
     width :100%;
@@ -23,9 +26,9 @@ h1 {
 {
     margin-left: 20%;
     padding-top: 4%;
-    color: black;
+    color: crimson;
     font-size: 200%;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .wrap_content {
