@@ -1,0 +1,40 @@
+.tasklists, .tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(247, 56, 247);
+    font-size: 16px;
+    text-align: center;
+    background-image: linear-gradient(blue,green,yellow,purple);
+}
+.tasks{
+    color: red;
+    background-image: linear-gradient(purple,yellow,green,blue);
+}
+.tasklists_name:hover{
+    cursor: pointer;
+}
+.tasklists_title, .tasks_title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.tasklists_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.tasklists_item:first-child{
+    margin-top: 10px;
+}
+.tasklists_id{
+    margin-right: 5px;
+}
+.tasks{
+    align-items: center;
+}
