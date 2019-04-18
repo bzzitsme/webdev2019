@@ -1,9 +1,9 @@
 {
-  "name": "front",
+  "name": "todo-front",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -21,7 +21,7 @@
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
     "moment": "^2.24.0",
-    "rxjs": "~6.3.3",
+    "rxjs": "^6.0.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },

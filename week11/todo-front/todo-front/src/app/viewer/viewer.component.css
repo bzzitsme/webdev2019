@@ -1,0 +1,36 @@
+.viewer{
+    background-image: linear-gradient(to right top, #b0bfd6, #89a6b7, #668c95, #4b7372, #38594e);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .taskLists{
+    width: 40%;
+  }
+  .taskList{
+    font-size: 24px;
+    width: 100%;
+    min-height: 100px;
+    background-image: linear-gradient(to right top, #b0bfd6, #93c2dd, #6ec6d8, #51c8c5, #55c8a4);
+    color: #FFF;
+    margin: 10px;
+    border: 5px solid #0046b0, #0075ce, #009dd2, #00c0c7, #75e0bf;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .tasksContainer{
+    width: 40%;
+  }
+  .tasks{
+    font-size: 16px;
+    width: 80%;
+    min-height: 100px;
+    background-image: linear-gradient(to right top, #b0bfd6, #89a6b7, #668c95, #4b7372, #38594e);
+    color: #FFF;
+    margin: 10px;
+    border: 5px solid  #0046b0, #0075ce, #009dd2, #00c0c7, #75e0bf;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+  }

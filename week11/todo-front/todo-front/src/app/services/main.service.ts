@@ -23,7 +23,7 @@ export class MainService {
     return this.http.post(uri, body).toPromise().then(res => res);
   }
 
-  delet(uri: string, body: any): Promise<any> {
+  delete(uri: string, body: any): Promise<any> {
     body = this.normalBody(body);
     return this.http.delete(uri, body).toPromise().then(res => res);
   }
@@ -58,6 +58,4 @@ export class MainService {
     }
     return params;
   }
-
-
 }
