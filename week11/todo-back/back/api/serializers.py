@@ -20,7 +20,6 @@ class TaskListSerializer(serializers.Serializer):
 class TaskSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(read_only=True)
     task_list = TaskListSerializer(required=False)
-
     class Meta:
         model = Task
         fields = '__all__'

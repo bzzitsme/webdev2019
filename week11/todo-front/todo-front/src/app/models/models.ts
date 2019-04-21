@@ -6,6 +6,7 @@ export interface TaskList {
   export interface Task {
     id: number;
     name: string;
+    task_list: TaskList;
     status: string;
     created_at: Date;
     due_on: Date;
