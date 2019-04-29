@@ -1,51 +1,58 @@
-<div *ngIf="!logged">
-  <input type="text" placeholder="username..." [(ngModel)]="username">
-  <input type="text" placeholder="password..." [(ngModel)]="password">
-  <button (click) = "login()" class= "login">Login</button>
-</div>
-<div *ngIf = "logged">
-  <button (click) = "logout()" class= "login">Log out</button>
-  <div class="taskLists">
-    <div class="content">
-      <div class="inTaskLists">
-        <div *ngFor="let t of taskLists" (click) = "getTaskOfTaskList(t)" class = "taskList">
-          <div class="data">
-            <input type="text" [(ngModel)]="t.name">
-          </div>
-          <span (click) = "updateTaskList(t)">CHANGE</span>
-          <span (click) = "deleteTaskList(t)">DELETE</span>
-          <span (click) = "getTaskOfTaskList(t)">SHOW</span>
-        </div>
-        <div class="create">
-          <input type="text" class = "createInput" id = "createInput" placeholder="New Task List Name... No more than 200" [(ngModel)]="name">
-          <button class="createBtn" (click) = "createTaskList()">CREATE</button>
-        </div>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Sign In</title>
+</head>
+<body>
+  <ng-container *ngIf="!logged">
+    <!-- <div class="btnLogin">
+      <div><input type="text" placeholder="Username"  [(ngModel)]="login"/></div>
+      <div><input type="text" placeholder="Password" [(ngModel)]="password"/></div>
+      <div><button (click)="auth()">Log in</button></div>
+    </div> -->
+    <div id="login">
+        <h1>Log In</h1>
+        <fieldset id="inputs">
+            <i class="far fa-user"></i>
+            <input id="username" type="text" placeholder="Username" [(ngModel)]="login" autofocus required>
+            <br>
+            <i class="fas fa-key"></i>
+            <input id="password" type="password" placeholder="Password" [(ngModel)]="password" autofocus required>
+        </fieldset>
+        <fieldset id="actions">
+            <input type="submit" (click)="auth()" id="submit" value="Log in">
+        </fieldset>
       </div>
-
-      <div class="inTasks">
-          <div class="inTasks__container">
-            <div *ngFor = "let t of tasks" class = "tasks">
-              <div class="taskInfo">
-                <div><span> Name: </span> <input type="text" [(ngModel)]="t.name"></div>
-                <div><span>TaskList: {{t.task_list.name}}</span></div>
-                <div><span> Status: </span> <input type="text" [(ngModel)]="t.status"></div>
-                <div><span> Created_at: </span> {{t.created_at}}</div>
-                <div><span> Due_on: </span> {{t.due_on}}</div>
-              </div>
-              <div class="bttns">
-                <span (click) = "updateTask(t)">CHANGE</span>
-                <span (click) = "deleteTask(t)">DELETE</span>
-              </div>
-            </div>
-          </div>
-  <!--      <div class="inTasks__create">-->
-  <!--        <input type="text" class = "createInput" placeholder="New Task Name... No more than 200" [(ngModel)]="taskName">-->
-  <!--        <input type="text" class = "createInput" placeholder="New Task Status... No more than 200" [(ngModel)]="taskStatus">-->
-  <!--        <div>-->
-  <!--        <div>-->
-  <!--        <button class="createBtn" (click) = "createTask()">CREATE</button>-->
-  <!--      </div>-->
-        </div>
+  </ng-container>
+  
+  <ng-container *ngIf="logged">
+    <h2>Create Task:</h2>
+    <div class="create">
+      <input class="createText" type="text" [(ngModel)]="name" />
+      <button class="btnCreate" (click)="createTasklist()">Create</button>
     </div>
-  </div>
-</div>
+    <h2>Tasklists:</h2>
+    <div class = "tasklist">
+      <div class="AllTaskLists" *ngFor="let c of taskLists">
+      <span>
+          <input type="" [(ngModel)]="c.name" />
+        </span>
+        <br>
+        <span class="btnDelete" style="background-image: linear-gradient(to right top, #3d1725, #6b1a35, #9b1640, #cd0a45, #ff0043)" (click)="deleteTaskList(c)"> Delete</span><br>
+        <span class="btnEdit" style="background-image: linear-gradient(to right top, #022107, #03340e, #07490f, #145e0c, #257400)" (click)="updateTaskList(c)"> Edit</span><br>
+        <span class="btnGet" style="background-image: linear-gradient(to right top, #213424, #19433d, #12515b, #2c5c78, #59648c)" (click)="getTasks(c)"> Get Tasks </span>
+      </div>
+    </div>
+    <br/>
+    <h2>Tasks</h2>
+    <div class = "ListTasks">
+      <div class="Tasks" *ngFor="let t of tasks">
+        ID : {{t.id}} <br> Name: {{t.name}} <br> Created at: {{t.created_at}} <br> Due on: {{t.due_on}} <br> Status: {{t.status}}
+      </div>
+    </div>
+  
+    <div class="btnLogout">
+      <br/>
+      <button (click)="logout()">Log out</button>
+    </div>
+  </ng-container>
