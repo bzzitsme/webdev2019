@@ -20,7 +20,14 @@ import {AuthInterceptor} from './AuthInterceptor';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    ProviderService,
+    <ClassProvider> {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

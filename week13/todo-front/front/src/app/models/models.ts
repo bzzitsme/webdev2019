@@ -1,17 +1,16 @@
-export interface TaskList {
+  export interface ITaskList {
     id: number;
     name: string;
   }
-  
-  export interface Task {
+
+  export interface ITask {
     id: number;
     name: string;
-    task_list: TaskList;
-    status: string;
     created_at: Date;
     due_on: Date;
+    status: string;
   }
-  
-  export interface Token {
+
+  export interface IAuthResponse {
     token: string;
   }
