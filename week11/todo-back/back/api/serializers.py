@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import TaskList, Task
 from . import models
 
+
 class TaskListSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(max_length=200)
