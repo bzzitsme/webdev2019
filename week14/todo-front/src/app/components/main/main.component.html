@@ -17,7 +17,7 @@
           <span (click) = "getTaskOfTaskList(t)">SHOW</span>
         </div>
         <div class="create">
-          <input type="text" class = "createInput" id = "createInput" placeholder="New Task List Name... No more than 200" [(ngModel)]="name">
+          <input type="text" class = "createInput" id = "createInput" placeholder="New Task List Name" [(ngModel)]="name">
           <button class="createBtn" (click) = "createTaskList()">CREATE</button>
         </div>
         <div class="sortBy">
@@ -50,8 +50,8 @@
             </div>
           </div>
         <div class="inTasks__create">
-          <input type="text" class = "createInput" placeholder="New Task Name... No more than 200" [(ngModel)]="taskName">
-          <input type="text" class = "createInput" placeholder="New Task Status... No more than 200" [(ngModel)]="taskStatus">
+          <input type="text" class = "createInput" placeholder="New Task Name" [(ngModel)]="taskName">
+          <input type="text" class = "createInput" placeholder="New Task Status" [(ngModel)]="taskStatus">
           <button class="createBtn" (click) = "createTask()">CREATE</button>
         </div>
         <div class="sortBy">
@@ -66,7 +66,7 @@
           <button (click)="sortingOfTasks()">Sort</button>
         </div>
         <div class="search">
-          <input type="text" placeholder="type words..." [(ngModel)]="searchTask">
+          <input type="text" placeholder="Type words" [(ngModel)]="searchTask">
           <button (click)="sortingOfTasks()">Search</button>
         </div>
         <div class="filter">
@@ -74,7 +74,7 @@
             <option value="name">name</option>
             <option value="status">status</option>
           </select>
-          <input type="text" placeholder="type words..." [(ngModel)]="filterValue">
+          <input type="text" placeholder="Type words" [(ngModel)]="filterValue">
           <button (click)="sortingOfTasks()">Filter</button>
         </div>
         </div>

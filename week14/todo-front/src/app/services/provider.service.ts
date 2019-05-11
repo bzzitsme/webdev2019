@@ -71,8 +71,7 @@ export class ProviderService extends MainService {
   }
 
   logout(): Promise<any> {
-    return this.post('http://localhost:8000/api/logout/', {
-    });
+    return this.post('http://localhost:8000/api/logout/', {});
   }
 
 }
