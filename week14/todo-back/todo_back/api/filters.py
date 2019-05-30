@@ -1,5 +1,5 @@
 from django_filters import rest_framework as filters
-from api.models import TaskList, Task
+from .models import TaskList, Task
 
 
 class TaskListFilter(filters.FilterSet):

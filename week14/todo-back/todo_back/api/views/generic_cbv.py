@@ -1,5 +1,5 @@
-from api.models import TaskList
-from api.serializers import TaskListSerializer, TaskSerializer 
+from ..models import TaskList
+from ..serializers import TaskListSerializer, TaskSerializer
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 from django.http import Http404
@@ -7,7 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import LimitOffsetPagination
 # from rest_framework.pagination import PageNumberPagination
-from api.filters import TaskListFilter, TaskFilter
+from ..filters import TaskListFilter, TaskFilter
 
 
 class TaskListsAPIView(generics.ListCreateAPIView):
@@ -71,4 +71,3 @@ class TaskListTasksAPIView(generics.ListCreateAPIView):
     
 #     def get_serializer_class(self):
 #         return TaskSerializer
-# TODO add  permissions(filter), some filter, search, ordering, pagination

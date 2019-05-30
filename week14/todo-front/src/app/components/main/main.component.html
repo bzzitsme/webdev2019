@@ -1,83 +1,91 @@
-<div *ngIf="!logged">
-  <input type="text" placeholder="username..." [(ngModel)]="username">
-  <input type="text" placeholder="password..." [(ngModel)]="password">
-  <button (click) = "login()" class= "login">Login</button>
-</div>
-<div *ngIf = "logged">
-  <button (click) = "logout()" class= "login">Log out</button>
-  <div class="taskLists">
-    <div class="content">
-      <div class="inTaskLists">
-        <div *ngFor="let t of taskLists" (click) = "getTaskOfTaskList(t)" class = "taskList">
-          <div class="data">
-            <input type="text" [(ngModel)]="t.name">
-          </div>
-          <span (click) = "updateTaskList(t)">CHANGE</span>
-          <span (click) = "deleteTaskList(t)">DELETE</span>
-          <span (click) = "getTaskOfTaskList(t)">SHOW</span>
-        </div>
-        <div class="create">
-          <input type="text" class = "createInput" id = "createInput" placeholder="New Task List Name" [(ngModel)]="name">
-          <button class="createBtn" (click) = "createTaskList()">CREATE</button>
-        </div>
-        <div class="sortBy">
-          <select name="sorting" id="sorting" [(ngModel)]="sorting">
-            <option value="ordering=name">name +ASC</option>
-            <option value="ordering=-name">name -DESC</option>
-          </select>
-          <button (click)="sort()">Sort</button>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="type words..." [(ngModel)]="searchTaskList">
-          <button (click)="sort()">Search</button>
-        </div>
-      </div>
+<head><link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></head>
 
-      <div class="inTasks">
-          <div class="inTasks__container">
-            <div *ngFor = "let t of tasks" class = "tasks">
-              <div class="taskInfo">
-                <div><span> Name: </span> <input type="text" [(ngModel)]="t.name"></div>
-                <div><span>TaskList: {{t.task_list.name}}</span></div>
-                <div><span> Status: </span> <input type="text" [(ngModel)]="t.status"></div>
-                <div><span> Created_at: </span> {{formatDate(t.created_at)}}</div>
-                <div><span> Due_on: </span> {{formatDate(t.due_on)}}</div>
-              </div>
-              <div class="bttns">
-                <span (click) = "updateTask(t)">CHANGE</span>
-                <span (click) = "deleteTask(t)">DELETE</span>
+
+<body>
+  <div *ngIf="!logged" style="margin-left: 40%;">
+    <input type="text" class="form-control" style="width: 300px;" placeholder="Username" [(ngModel)]="username">
+    <input type="password" class="form-control" style="width: 300px;" placeholder="Password" [(ngModel)]="password">
+    <button class="btn btn-success" (click) = "login()" >Login</button>
+  </div>
+  <div *ngIf = "logged">
+    <button class="btn btn-danger" (click) = "logout()" style="margin-left: 95%;">Log out</button>
+    <div class="taskLists">
+      <div class="content">
+        <div class="inTaskLists">
+          <div *ngFor="let t of taskLists" (click) = "getTaskOfTaskList(t)" class = "taskList">
+            <div class="data">
+              <input type="text" [(ngModel)]="t.name">
+            </div>
+            <span (click) = "updateTaskList(t)">CHANGE</span>
+            <span (click) = "deleteTaskList(t)">DELETE</span>
+            <span (click) = "getTaskOfTaskList(t)">SHOW</span>
+          </div>
+          <div class="create">
+            <input type="text" class = "form-control" id = "createInput" placeholder="New Task List Name" [(ngModel)]="name">
+            <button class="btn btn-primary" (click) = "createTaskList()">CREATE</button>
+          </div>
+          <div class="sortBy">
+            <select name="sorting" id="sorting" class="form-control form-control-sm" [(ngModel)]="sorting">
+              <option value="ordering=name">+Ascending by Name</option>
+              <option value="ordering=-name">-Descending by Name</option>
+            </select>
+            <button class="btn btn-info" (click)="sort()">Sort</button>
+          </div>
+          <div class="search">
+            <input type="text" class="form-control" placeholder="Type Words" [(ngModel)]="searchTaskList">
+            <button class="btn btn-warning" (click)="sort()">Search</button>
+          </div>
+        </div>
+  
+        <div class="inTasks">
+            <div>
+              <div *ngFor = "let t of tasks" class = "tasks">
+                <div class="taskInfo">
+                  <div><span> Name: </span> <input type="text" [(ngModel)]="t.name"></div>
+                  <div><span>TaskList: {{t.task_list.name}}</span></div>
+                  <div><span> Status: </span> <input type="text" [(ngModel)]="t.status"></div>
+                  <div><span> Created_at: </span> {{formatDate(t.created_at)}}</div>
+                  <div><span> Due_on: </span> {{formatDate(t.due_on)}}</div>
+                </div>
+                <div>
+                  <span (click) = "updateTask(t)">CHANGE</span>
+                  <span (click) = "deleteTask(t)">DELETE</span>
+                </div>
               </div>
             </div>
+          <div class="inTasks__create">
+            <input type="text" class = "form-control" placeholder="New Task Name" [(ngModel)]="taskName">
+            <input type="text" class = "form-control" placeholder="New Task Status" [(ngModel)]="taskStatus">
+            <button class="btn btn-primary" (click) = "createTask()">CREATE</button>
           </div>
-        <div class="inTasks__create">
-          <input type="text" class = "createInput" placeholder="New Task Name" [(ngModel)]="taskName">
-          <input type="text" class = "createInput" placeholder="New Task Status" [(ngModel)]="taskStatus">
-          <button class="createBtn" (click) = "createTask()">CREATE</button>
-        </div>
-        <div class="sortBy">
-          <select name="sorting" id="sortTasks" [(ngModel)]="sortTasks">
-            <option value="name">name +ASC</option>
-            <option value="-name">name -DESC</option>
-            <option value="status">status +ASC</option>
-            <option value="-status">status -DESC</option>
-            <option value="created_at">created_at +ASC</option>
-            <option value="-created_at">created_at -DESC</option>
-          </select>
-          <button (click)="sortingOfTasks()">Sort</button>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Type words" [(ngModel)]="searchTask">
-          <button (click)="sortingOfTasks()">Search</button>
-        </div>
-        <div class="filter">
-          <select name="filter" id="filter" [(ngModel)]="filterName">
-            <option value="name">name</option>
-            <option value="status">status</option>
-          </select>
-          <input type="text" placeholder="Type words" [(ngModel)]="filterValue">
-          <button (click)="sortingOfTasks()">Filter</button>
-        </div>
-        </div>
+          <div class="sortBy">
+            <select name="sorting" id="sortTasks" [(ngModel)]="sortTasks">
+              <option value="name">+Ascending by Name</option>
+              <option value="-name">-Descending by Name</option>
+              <option value="status">+Ascending by Status</option>
+              <option value="-status">-Descending by Status</option>
+              <option value="created_at">+Ascending by Created_at</option>
+              <option value="-created_at">-Descending by Created_at</option>
+            </select>
+            <button class="btn btn-info" (click)="sortingOfTasks()">Sort</button>
+          </div>
+          <div class="search">
+            <input type="text" class="form-control" placeholder="Type words" [(ngModel)]="searchTask">
+            <button class="btn btn-warning" (click)="sortingOfTasks()">Search</button>
+          </div>
+          <div class="filter">
+            <select name="filter" id="filter" [(ngModel)]="filterName">
+              <option value="name">Name</option>
+              <option value="status">Status</option>
+            </select>
+            <input type="text" class="form-control" placeholder="Type words" [(ngModel)]="filterValue">
+            <button class="btn btn-success" (click)="sortingOfTasks()">Filter</button>
+          </div>
+          </div>
+      </div>
     </div>
   </div>
-</div>
+  
+</body>
