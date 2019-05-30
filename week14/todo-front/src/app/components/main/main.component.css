@@ -13,30 +13,8 @@
   display: flex;
   justify-content: space-between;
 }
-.inTaskLists{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-.inTasks{
-  width: 50%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.create{
-  width: 30%;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+
 .taskList{
   background: #FFF;
   border: 5px solid #000;
@@ -52,47 +30,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.data{
-  width: 50%;
-  height: 100%;
-}
-.createInput{
-  margin: 10px;
-  width: 200px;
-  height: 30px;
-  border: 1px solid #000;
-  border-radius: 3px;
-}
-.createBtn{
-  width: 200px;
-  height: 30px;
-  border: 1px solid #000;
-  border-radius: 3px;
-  margin: 10px;
-}
-.tasks{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.taskInfo{
-  width: 80%;
-  height: 100%;
-}
-.bttns{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 20%;
-  height: 100%;
-}
-.ids{
-  display: inline;
-}
-.login{
-  width: 50px;
-  height: 40px;
-  background: crimson;
-}
 
+body {
+  font: 15px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;
+}

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from api.models import TaskList, Task
+from .models import TaskList, Task
 from django.contrib.auth.models import User
 
 

@@ -1,5 +1,5 @@
-from api.models import TaskList, Task
-from api.serializers import TaskListSerializer, TaskSerializer 
+from ..models import TaskList, Task
+from ..serializers import TaskListSerializer, TaskSerializer
 from rest_framework.permissions import IsAuthenticated
 from django.http import Http404
 from rest_framework.views import APIView
